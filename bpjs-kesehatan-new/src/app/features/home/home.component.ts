@@ -23,7 +23,7 @@ import { SectionHeadingComponent, ContentCardComponent, ServiceCardComponent, To
     <bpjs-banner-carousel />
 
     <!-- Quick Actions -->
-    <section class="bg-neutral-50 -mt-1">
+    <section class="bg-neutral-50 mt-4">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 md:pb-12">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
           @for (action of quickActions; track action.label) {
