@@ -1,0 +1,16 @@
+@use '@angular/material' as mat;
+
+$bpjs-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$green-palette,
+    tertiary: mat.$orange-palette,
+  ),
+  typography: (
+    plain-family: 'Inter, system-ui, -apple-system, sans-serif',
+    brand-family: 'Poppins, sans-serif',
+  ),
+  density: (
+    scale: 0,
+  ),
+));
