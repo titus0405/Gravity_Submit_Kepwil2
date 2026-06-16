@@ -64,8 +64,9 @@ import { SectionHeadingComponent, ContentCardComponent, ServiceCardComponent, To
     </section>
 
     <!-- Well-being & Lifestyle + Spotlight Sidebar -->
-    <section class="bg-neutral-50 pb-10 md:pb-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="bg-gradient-to-br from-neutral-300 via-neutral-100 to-neutral-300 pb-10 md:pb-16 relative">
+      <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(circle at 1px 1px, #333 1px, transparent 0); background-size: 24px 24px"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid lg:grid-cols-4 gap-8">
           <div class="lg:col-span-3">
             <bpjs-section-heading title="Gaya Hidup Sehat" subtitle="Tips dan panduan hidup sehat untuk Anda dan keluarga" viewAllLink="/gaya-hidup" />

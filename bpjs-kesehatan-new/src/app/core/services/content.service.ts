@@ -16,8 +16,8 @@ export class ContentService {
     { id: '2', title: 'Diabetes', description: 'Kencing manis', imageUrl: 'assets/images/jamkes-manfaat.png', route: '/kondisi/diabetes' },
     { id: '3', title: 'Kolesterol Tinggi', description: 'Hyperlipidemia', imageUrl: 'assets/images/jamkes-iuran.png', route: '/kondisi/kolesterol-tinggi' },
     { id: '4', title: 'Jantung', description: 'Penyakit kardiovaskular', imageUrl: 'assets/images/jamkes-prosedur.png', route: '/kondisi/jantung' },
-    { id: '5', title: 'Stroke', description: 'Serangan otak', imageUrl: 'assets/images/logo-bpjs.svg', route: '/kondisi/stroke' },
-    { id: '6', title: 'Kanker', description: 'Penyakit neoplasma', imageUrl: 'assets/images/logo-care-center.png', route: '/kondisi/kanker' },
+    { id: '5', title: 'Stroke', description: 'Serangan otak', imageUrl: 'assets/images/jamkes-manfaat.png', route: '/kondisi/stroke' },
+    { id: '6', title: 'Kanker', description: 'Penyakit neoplasma', imageUrl: 'assets/images/jamkes-donasi.png', route: '/kondisi/kanker' },
   ]);
 
   readonly programmes = signal<ProgrammeCard[]>([
