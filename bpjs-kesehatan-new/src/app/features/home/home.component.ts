@@ -261,8 +261,8 @@ import { SectionHeadingComponent, ContentCardComponent, ServiceCardComponent, To
         <div class="grid md:grid-cols-3 gap-6">
           @for (video of videos; track video.id) {
             <div class="rounded-2xl overflow-hidden bg-neutral-100 border border-neutral-200 group cursor-pointer">
-              <a [routerLink]="video.route" class="block aspect-video bg-neutral-800 relative overflow-hidden">
-                <img [src]="video.thumbnail" [alt]="video.title" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+              <a [href]="'https://www.youtube.com/watch?v=' + video.youtubeId" target="_blank" rel="noopener noreferrer" class="block aspect-video bg-neutral-800 relative overflow-hidden">
+                <img [src]="'https://img.youtube.com/vi/' + video.youtubeId + '/maxresdefault.jpg'" [alt]="video.title" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loading="lazy">
                 <div class="absolute inset-0 flex items-center justify-center">
                   <div class="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                     <svg class="w-5 h-5 text-primary-700 ml-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/></svg>
@@ -290,7 +290,8 @@ import { SectionHeadingComponent, ContentCardComponent, ServiceCardComponent, To
         <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
           <div class="text-center lg:text-left lg:max-w-lg">
             <span class="inline-block px-3 py-1 rounded-full bg-white/15 text-white/90 text-xs font-medium backdrop-blur-sm mb-3">Aplikasi Mobile</span>
-            <h2 class="font-display text-2xl md:text-3xl font-bold text-white">Mobile JKN</h2>
+            <h2 class="font-display text-2xl md:text-3xl font-bold text-white flex items-center gap-3">
+              <img src="assets/images/mobilejkn.png" alt="" class="h-8 md:h-10 w-auto"> Mobile JKN</h2>
             <p class="mt-2 text-primary-100 leading-relaxed">Akses informasi dan layanan BPJS Kesehatan kapan saja, di mana saja melalui genggaman Anda.</p>
             <div class="flex flex-wrap gap-4 mt-4 justify-center lg:justify-start">
               <span class="inline-flex items-center gap-1.5 text-sm text-white/80">
@@ -575,9 +576,9 @@ export class HomeComponent {
   ];
 
   readonly videos = [
-    { id: 1, title: 'Cara Daftar BPJS Kesehatan Online', thumbnail: 'assets/images/jamkes-peserta.png', duration: '5:30', route: '/video/1' },
-    { id: 2, title: 'Tips Menggunakan Aplikasi Mobile JKN', thumbnail: 'assets/images/jamkes-manfaat.png', duration: '4:15', route: '/video/2' },
-    { id: 3, title: 'Manfaat Program JKN untuk Keluarga', thumbnail: 'assets/images/jamkes-iuran.png', duration: '6:45', route: '/video/3' },
+    { id: 1, title: 'Cara Daftar BPJS Kesehatan Online', youtubeId: '8asTBGawIFY', duration: '1:49' },
+    { id: 2, title: 'Tips Menggunakan Aplikasi Mobile JKN', youtubeId: 'iUqvjMKF1B4', duration: '0:45' },
+    { id: 3, title: 'Manfaat Program JKN untuk Keluarga', youtubeId: '7cJjT9P_mgY', duration: '0:54' },
   ];
 
   readonly testimonials = [
